@@ -1,0 +1,107 @@
+
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+}
+body {
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    overflow: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+    margin-inline: auto;
+    margin-top: 7%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+    background-color: white;
+    flex: 1;
+    padding-inline: 10px;
+    
+}
+.img-container {
+    flex: 1;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+p {
+    font-size: 14px;
+}
+.big {
+    font-size: 40px;
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.small {
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.call-to-action {
+    /* align-self: center; */
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-decoration: none;
+    padding-inline: 16px;
+    padding-block: 20px;
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    /* justify-content: stretch; */
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+h1 {
+    margin: 0;
+    font-family: "Fraunces", serif;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.main {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+
+@media only screen and (max-width: 600px) { 
+    .wrapper {
+        width: 100%;
+        align-items: center;
+    }
+    .img-container img {
+        width: 100%; 
+        min-width: 300px; 
+    }
+}
+
